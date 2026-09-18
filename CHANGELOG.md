@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+- Fix: Message bar helpers no longer hide unrelated errors. Only `RuntimeError` is suppressed.
+- Maintenance: Add bandit security checks to linting.
+- Maintenance: Replace an `assert` with a real check in `resources.plugin_path()` internals. No behaviour change.
+
 ## [1.1.1] - 2026-7-24
 
 - Feature: Add timeout to network requests
